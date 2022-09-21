@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap");
+:root {
+  --main-color: #8e44ad;
+  --red: #e74c3c;
+  --orange: #f39c12;
+  --light-color: #888;
+  --light-bg: #eee;
+  --black: #2c3e50;
+  --white: #fff;
+  --border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  --main-transtion: 0.4s;
+}
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+*::selection {
+  background-color: var(--main-color);
+  color: #fff;
+}
+html {
+  overflow-x: hidden;
+}
+
+/*qeury Selector*/
+.container {
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+
+/* scrollbar */
+html::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+html::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 5px;
+}
+
+/* body  */
+body {
+  background-color: var(--light-bg);
+  padding-left: 300px;
+}
+body.dark {
+  --light-color: #aaa;
+  --light-bg: #333;
+  --black: #fff;
+  --white: #222;
+  --border: 0.1rem solid rgba(255, 255, 255, 0.2);
+}
+body.active {
+  padding-left: 0;
+}
+@media (max-width: 1000px) {
+  body {
+    padding-left: 0;
+  }
+}
+section {
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+/* Btns */
+.btn,
+.option-btn,
+.delete-btn,
+.inline-btn,
+.inline-option-btn,
+.inline-delete-btn {
+  border-radius: 5px;
+  padding: 10px 30px;
+  font-size: 18px;
+  color: #fff;
+  margin-top: 10px;
+  text-transform: capitalize;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--main-transtion);
+}
+.btn,
+.option-btn,
+.delete-btn {
+  display: block;
+  width: 100%;
+}
+.inline-btn,
+.inline-option-btn,
+.inline-delete-btn {
+  display: inline-block;
+}
+.btn,
+.inline-btn {
+  background-color: var(--main-color);
+}
+.inline-option-btn,
+.option-btn {
+  background-color: var(--orange);
+}
+.delete-btn,
+.inline-delete-btn {
+  background-color: var(--red);
+}
+.flex-btn {
+  display: flex;
+  gap: 10px;
+}
+.btn:hover,
+.option-btn:hover,
+.delete-btn:hover,
+.inline-btn:hover,
+.inline-option-btn:hover,
+.inline-delete-btn:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+@media (max-width: 768px) {
+  .btn,
+  .option-btn,
+  .delete-btn,
+  .inline-btn,
+  .inline-option-btn,
+  .inline-delete-btn {
+    font-size: 16px;
+  }
+}
+/* section-title  */
+.section-title {
+  color: var(--black);
+  font-size: 25px;
+  padding-bottom: 10px;
+  border-bottom: var(--border);
+}
+.flex {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}

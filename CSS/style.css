@@ -1,5 +1,346 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+/* Start Header   */
+header {
+  background-color: var(--white);
+  border-bottom: var(--border);
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
 }
+header .container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+header .container .logo {
+  font-size: 30px;
+}
+header .container .logo a {
+  color: var(--black);
+}
+header .container form {
+  display: flex;
+  height: 35px;
+  width: 400px;
+  background-color: var(--light-bg);
+}
+header .container form input {
+  width: 100%;
+  height: 100%;
+  padding: 5px 15px;
+  font-size: 15px;
+  color: var(--black);
+  background: none;
+}
+header .container form button {
+  height: 100%;
+  padding: 5px 15px;
+  font-size: 15px;
+  cursor: pointer;
+  background: none;
+  color: var(--black);
+  transition: var(--main-transtion);
+}
+header .container form button:hover {
+  color: var(--main-color);
+}
+header .container .icons {
+  display: flex;
+  gap: 8px;
+}
+header .container .icons span {
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+  background-color: var(--light-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+  transition: var(--main-transtion);
+}
+header .container .icons span.fa-search {
+  display: none;
+}
+header .container .icons span:hover {
+  background-color: var(--black);
+  color: var(--light-bg);
+}
+header .container .portfolioo {
+  position: absolute;
+  top: 110%;
+  right: 10px;
+  background-color: var(--white);
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  width: 270px;
+  transform-origin: top right;
+  transform: scale(0);
+  transition: var(--main-transtion);
+}
+header .container .portfolioo.active {
+  transform: scale(1);
+}
+header .container .portfolioo h3 {
+  font-size: 20px;
+  color: var(--black);
+  padding: 10px 0 5px;
+}
+header .container .portfolioo p {
+  font-size: 18px;
+  color: var(--light-color);
+}
+@media (max-width: 768px) {
+  header .container .logo {
+    font-size: 20px;
+  }
+  header .container .icons span.fa-search {
+    display: flex;
+  }
+  header .container form {
+    position: absolute;
+    width: calc(100% - 10px);
+    top: calc(100% + 5px);
+    right: 5px;
+    background-color: var(--white);
+    transition: 0.3s;
+    transform: scale(0);
+    transform-origin: top;
+  }
+  header .container form.active {
+    transform: scale(1);
+  }
+}
+/* End Header   */
+/* Start Slidebar   */
+.slidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  background-color: var(--white);
+  height: 100vh;
+  border-right: var(--border);
+  z-index: 1200;
+  transition: 0.4s;
+  padding: 60px 0px;
+}
+.slidebar.active {
+  left: -30rem;
+}
+.slidebar .close {
+  position: absolute;
+  right: 5px;
+  top: 0px;
+  width: 35px;
+  height: 35px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--main-transtion);
+}
+.slidebar .portfolio {
+  text-align: center;
+  padding: 0px 20px;
+}
+.slidebar .portfolio h3 {
+  font-size: 20px;
+  color: var(--black);
+  padding: 10px 0 5px;
+}
+.slidebar .portfolio p {
+  font-size: 18px;
+  color: var(--light-color);
+}
+.slidebar .nav {
+  padding: 20px 0;
+}
+
+.slidebar .nav li a {
+  display: block;
+  padding: 15px 20px;
+  font-size: 18px;
+  transition: var(--main-transtion);
+}
+.slidebar .nav li:not(:last-child) a {
+  border-bottom: 1px solid var(--main-color);
+}
+.slidebar .nav li.active a,
+.slidebar .nav li a:hover {
+  background-color: var(--light-bg);
+}
+.slidebar .nav li i {
+  color: var(--main-color);
+  margin-right: 10px;
+  width: 25px;
+}
+.slidebar .nav li span {
+  color: var(--light-color);
+  transition: var(--main-transtion);
+}
+.slidebar .nav li:hover span {
+  padding-left: 10px;
+}
+@media (max-width: 1000px) {
+  .slidebar {
+    left: -30rem;
+  }
+  .slidebar .close {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .slidebar.active {
+    left: 0;
+    box-shadow: 0 0 0 100vw rgb(0 0 0 / 80%);
+    border-right: 0;
+  }
+  .slidebar .nav li a {
+    padding: 15px 20px;
+    font-size: 16px;
+  }
+}
+/* End Slidebar   */
+/* Start Footer  */
+footer {
+  background-color: var(--white);
+  color: var(--black);
+  padding: 20px 0;
+  border-top: var(--border);
+  margin-top: 20px;
+}
+footer .container .copy {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+footer .container .copy span {
+  color: var(--main-color);
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  footer {
+    padding: 10px 0;
+  }
+  footer .container .copy {
+    font-size: 14px;
+  }
+}
+/* End Footer  */
+/* ========================Start Home section ======== */
+/* start  quick-option */
+
+.quick-option .container .content-quick {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+.quick-option .container .content-quick .box {
+  background-color: var(--white);
+  padding: 15px;
+  border-radius: 10px;
+}
+.quick-option .container .content-quick .box h3 {
+  font-size: 22px;
+  color: var(--black);
+  padding-bottom: 5px;
+}
+.quick-option .container .content-quick .box p {
+  font-size: 18px;
+  color: var(--light-color);
+  padding-top: 5px;
+  line-height: 1.7;
+}
+.quick-option .container .content-quick .box p span {
+  color: var(--main-color);
+}
+.quick-option .container .content-quick .box .flex a {
+  background-color: var(--light-bg);
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: var(--main-transtion);
+}
+.quick-option .container .content-quick .box .flex a i {
+  width: 20px;
+  color: var(--black);
+}
+.quick-option .container .content-quick .box .flex a span {
+  color: var(--light-color);
+}
+.quick-option .container .content-quick .box .flex a:hover {
+  background-color: var(--black);
+}
+.quick-option .container .content-quick .box .flex a:hover i,
+.quick-option .container .content-quick .box .flex a:hover span {
+  color: var(--white);
+}
+/* End  quick-option */
+/* Start Our Courses  */
+.our-courses .container .content-courses {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 15px;
+}
+.our-courses .container .content-courses .box-course {
+  background-color: var(--white);
+  padding: 15px;
+  border-radius: 5px;
+}
+.our-courses .container .content-courses .box-course .head-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.our-courses .container .content-courses .box-course .head-box img {
+  width: 70px;
+}
+.our-courses .container .content-courses .box-course .head-box .text h4 {
+  text-transform: capitalize;
+  font-size: 18px;
+  color: var(--black);
+}
+.our-courses .container .content-courses .box-course .head-box span {
+  color: var(--light-color);
+  font-size: 14px;
+}
+.our-courses .container .content-courses .box-course .imgs {
+  position: relative;
+}
+.our-courses .container .content-courses .box-course .imgs img {
+  width: 100%;
+  border-radius: 8px;
+}
+.our-courses .container .content-courses .box-course .imgs .dis {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+.our-courses .container .content-courses .box-course h3 {
+  color: var(--black);
+  padding: 10px 0;
+}
+.our-courses .container .more-btn {
+  text-align: center;
+  margin-top: 15px;
+}
+/* End Our Courses  */
+/* ========================End Home section ======== */
