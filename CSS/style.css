@@ -87,6 +87,11 @@ header .container .portfolioo {
 header .container .portfolioo.active {
   transform: scale(1);
 }
+header .container .portfolioo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
 header .container .portfolioo h3 {
   font-size: 20px;
   color: var(--black);
@@ -153,6 +158,11 @@ header .container .portfolioo p {
 .slidebar .portfolio {
   text-align: center;
   padding: 0px 20px;
+}
+.slidebar .portfolio img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
 .slidebar .portfolio h3 {
   font-size: 20px;
@@ -237,9 +247,9 @@ footer .container .copy span {
   }
 }
 /* End Footer  */
+
 /* ========================Start Home section ======== */
 /* start  quick-option */
-
 .quick-option .container .content-quick {
   padding-top: 20px;
   display: grid;
@@ -307,6 +317,8 @@ footer .container .copy span {
 }
 .our-courses .container .content-courses .box-course .head-box img {
   width: 70px;
+  height: 70px;
+  border-radius: 50%;
 }
 .our-courses .container .content-courses .box-course .head-box .text h4 {
   text-transform: capitalize;
@@ -322,6 +334,7 @@ footer .container .copy span {
 }
 .our-courses .container .content-courses .box-course .imgs img {
   width: 100%;
+  max-height: 200px;
   border-radius: 8px;
 }
 .our-courses .container .content-courses .box-course .imgs .dis {
@@ -344,3 +357,249 @@ footer .container .copy span {
 }
 /* End Our Courses  */
 /* ========================End Home section ======== */
+
+/* ========================Start About section ======== */
+.about .container .content-about {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.about .container .content-about img {
+  width: 50%;
+}
+.about .container .content-about .about-text h3 {
+  color: var(--black);
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+.about .container .content-about .about-text p {
+  color: var(--light-color);
+  line-height: 1.8;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .about .container .content-about {
+    flex-direction: column;
+  }
+  .about .container .content-about img {
+    width: 96%;
+  }
+}
+.about .container .count-about {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+.about .container .count-about .box-count {
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.about .container .count-about .box-count span {
+  font-size: 35px;
+  color: var(--main-color);
+}
+.about .container .count-about .box-count .discrb h3 {
+  padding-top: 5px;
+  color: var(--black);
+  font-size: 25px;
+}
+.about .container .count-about .box-count .discrb p {
+  color: var(--light-color);
+  font-size: 18px;
+}
+/* <!-- Start Student's Reviews  --> */
+.student-reviews .container .content-studentReview {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 15px;
+}
+.student-reviews .container .content-studentReview .card {
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 15px;
+}
+.student-reviews .container .content-studentReview .card p {
+  color: var(--light-color);
+  line-height: 1.7;
+  font-size: 17px;
+}
+.student-reviews .container .content-studentReview .card .student {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  gap: 15px;
+}
+.student-reviews .container .content-studentReview .card .student img {
+  width: 60px;
+}
+
+.student-reviews .container .content-studentReview .card .student .text-stu h3 {
+  color: var(--black);
+  font-size: 20px;
+}
+.student-reviews .card .student .text-stu .starts {
+  font-size: 16px;
+  color: var(--orange);
+}
+/* <!-- End Student's Reviews  --> */
+/* ========================End About section ======== */
+
+/* ========================Start Teachers section ======== */
+.teachers .container .search-teacher {
+  width: 100%;
+  margin: 15px 0;
+  display: flex;
+  background-color: var(--white);
+  border-radius: 8px;
+}
+.teachers .container .search-teacher input {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  background: none;
+}
+.teachers .container .search-teacher button {
+  font-size: 18px;
+  padding: 15px;
+  background: none;
+  cursor: pointer;
+}
+.teachers .container .content-teachers {
+  padding: 10px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 15px;
+}
+.teachers .container .content-teachers .box-teacher {
+  padding: 15px;
+  background-color: var(--white);
+  border-radius: 8px;
+}
+.teachers .container .content-teachers .box-teacher h2 {
+  color: var(--black);
+  padding: 15px 0;
+  font-size: 25px;
+}
+.teachers .container .content-teachers .box-teacher:first-child {
+  text-align: center;
+}
+.teachers .container .content-teachers .box-teacher .teach {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 15px 0;
+}
+.teachers .container .content-teachers .box-teacher .teach img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.teachers .container .content-teachers .box-teacher .teach .teach-txt h3 {
+  font-size: 20px;
+  color: var(--black);
+}
+.teachers .container .content-teachers .box-teacher .teach .teach-txt span {
+  font-size: 16px;
+  color: var(--light-color);
+}
+.teachers .container .content-teachers .box-teacher p {
+  font-size: 17px;
+  color: var(--light-color);
+  padding-bottom: 7px;
+}
+.teachers .container .content-teachers .box-teacher p span {
+  color: var(--main-color) !important;
+}
+/* ========================End Teachers section ======== */
+
+/* ========================Start Contact Us section ======== */
+
+.contact-us .container .content-contactUs {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding-top: 20px;
+}
+.contact-us .container .content-contactUs img {
+  width: 50%;
+}
+.contact-us .container .content-contactUs .contactUs-form {
+  background-color: var(--white);
+  padding: 20px;
+}
+.contact-us .container .content-contactUs .contactUs-form h3 {
+  font-size: 30px;
+  color: var(--black);
+  text-align: center;
+  margin-bottom: 15px;
+}
+.contact-us .container .content-contactUs .contactUs-form input,
+.contact-us .container .content-contactUs .contactUs-form textarea {
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 15px;
+  font-size: 17px;
+  border-radius: 8px;
+  background-color: var(--light-bg);
+}
+.contact-us .container .content-contactUs .contactUs-form textarea {
+  height: 200px;
+  resize: none;
+}
+.contact-us .container .content-contactUs .contactUs-form button {
+  display: block;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .contact-us .container .content-contactUs {
+    flex-direction: column;
+  }
+  .contact-us .container .content-contactUs img {
+    width: 96%;
+  }
+  .contact-us .container .content-contactUs .contactUs-form h3 {
+    font-size: 30px;
+  }
+}
+.contact-us .container .contact-me {
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 15px;
+}
+.contact-us .container .contact-me .box-me {
+  padding: 15px;
+  background-color: var(--white);
+  border-radius: 8px;
+  text-align: center;
+}
+.contact-us .container .contact-me .box-me span {
+  font-size: 40px;
+  color: var(--main-color);
+  margin-bottom: 10px;
+}
+.contact-us .container .contact-me .box-me h3 {
+  color: var(--black);
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.contact-us .container .contact-me .box-me a {
+  color: var(--light-color);
+  display: block;
+  padding-bottom: 5px;
+  font-size: 18px;
+  transition: var(--main-transtion);
+}
+.contact-us .container .contact-me .box-me a:hover {
+  color: var(--black);
+  text-decoration: underline;
+}
+/* ========================End Contact Us section ======== */
