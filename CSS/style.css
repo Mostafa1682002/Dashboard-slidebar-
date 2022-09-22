@@ -403,6 +403,8 @@ footer .container .copy span {
 }
 .about .container .count-about .box-count span {
   font-size: 35px;
+  width: 50px;
+  text-align: center;
   color: var(--main-color);
 }
 .about .container .count-about .box-count .discrb h3 {
