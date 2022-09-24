@@ -11,6 +11,7 @@ header {
 header .container {
   padding-top: 10px;
   padding-bottom: 10px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -103,7 +104,7 @@ header .container .portfolioo p {
 }
 @media (max-width: 768px) {
   header .container .logo {
-    font-size: 20px;
+    font-size: 25px;
   }
   header .container .icons span.fa-search {
     display: flex;
@@ -111,6 +112,7 @@ header .container .portfolioo p {
   header .container form {
     position: absolute;
     width: calc(100% - 10px);
+    height: 50px;
     top: calc(100% + 5px);
     right: 5px;
     background-color: var(--white);
@@ -343,8 +345,8 @@ footer .container .copy span {
   left: 10px;
   background-color: rgba(0, 0, 0, 0.3);
   color: #fff;
-  padding: 5px 10px;
-  font-size: 15px;
+  padding: 7px 10px;
+  font-size: 16px;
   border-radius: 10px;
 }
 .our-courses .container .content-courses .box-course h3 {
@@ -605,3 +607,306 @@ footer .container .copy span {
   text-decoration: underline;
 }
 /* ========================End Contact Us section ======== */
+
+/* ========================Start Profile Section ======== */
+.profile .container .content-profile {
+  margin-top: 30px;
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 8px;
+}
+.profile .container .content-profile .update {
+  text-align: center;
+  padding: 15px;
+}
+.profile .container .content-profile .update img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+}
+.profile .container .content-profile .update h3 {
+  color: var(--black);
+  font-size: 23px;
+  padding: 7px;
+}
+.profile .container .content-profile .update p {
+  font-size: 17px;
+  color: var(--light-color);
+}
+.profile .container .content-profile .boxs-profile {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 15px;
+}
+.profile .container .content-profile .boxs-profile .boxx {
+  background-color: var(--light-bg);
+  border-radius: 8px;
+  padding: 15px;
+}
+.profile .container .content-profile .boxs-profile .boxx .txtx {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 5px 0 10px;
+}
+.profile .container .content-profile .boxs-profile .boxx .txtx > span {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--black);
+  border-radius: 8px;
+}
+.profile .container .content-profile .boxs-profile .boxx .txtx > span i {
+  color: var(--white);
+  font-size: 18px;
+}
+.profile .container .content-profile .boxs-profile .boxx .txtx > div span {
+  font-size: 25px;
+  color: var(--main-color);
+}
+.profile .container .content-profile .boxs-profile .boxx .txtx > div p {
+  color: var(--light-color);
+}
+/* ========================End Profile Section ======== */
+
+/* ========================Start Update Profile Section  ======== */
+.update-profile .container .content-updateProfile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.update-profile .container .content-updateProfile .update-form {
+  background-color: var(--white);
+  width: 500px;
+  padding: 20px;
+  border-radius: 8px;
+}
+.update-profile .container .content-updateProfile .update-form h2 {
+  font-size: 25px;
+  color: var(--black);
+  padding-bottom: 15px;
+  text-align: center;
+}
+.content-updateProfile .update-form .box-f {
+  margin: 10px 0 15px;
+}
+.content-updateProfile .update-form .box-f label {
+  display: block;
+  color: var(--light-color);
+  text-transform: capitalize;
+  font-size: 18px;
+  padding-bottom: 7px;
+}
+.content-updateProfile .update-form .box-f input {
+  padding: 15px;
+  background-color: var(--light-bg);
+  color: var(--black);
+  border-radius: 5px;
+  width: 100%;
+  font-size: 18px;
+}
+/* ========================End Update Profile Section  ======== */
+
+/* ========================Start Register and Login Section   ======== */
+.content-loginProf {
+  min-height: 74vh;
+}
+.content-rgisterProf,
+.content-loginProf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-register-form {
+  background-color: var(--white);
+  width: 500px;
+  padding: 20px;
+  border-radius: 8px;
+}
+.login-register-form h2 {
+  font-size: 25px;
+  color: var(--black);
+  padding-bottom: 15px;
+  text-align: center;
+}
+.login-register-form .box-frl {
+  margin: 10px 0 15px;
+}
+.login-register-form .box-frl label {
+  display: block;
+  color: var(--light-color);
+  text-transform: capitalize;
+  font-size: 18px;
+  padding-bottom: 7px;
+  width: fit-content;
+  position: relative;
+}
+.login-register-form .box-frl label::after {
+  content: "*";
+  position: absolute;
+  color: red;
+  right: -10px;
+  top: 0;
+}
+.login-register-form .box-frl input {
+  padding: 15px;
+  background-color: var(--light-bg);
+  color: var(--black);
+  border-radius: 5px;
+  width: 100%;
+  font-size: 18px;
+}
+/* ========================End Register and Login Section   ======== */
+
+/* ========================Start PalyList Section   ======== */
+/* Start Playlist Details  */
+
+.playlist .container .playlist-details {
+  background-color: var(--white);
+  padding: 20px;
+  margin: 35px 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.playlist .container .playlist-details .row {
+  width: 50%;
+}
+.playlist .container .playlist-details .row .saveplaylist {
+  margin-bottom: 15px;
+}
+.playlist .container .playlist-details .row .saveplaylist button {
+  padding: 10px;
+  background-color: var(--light-bg);
+  cursor: pointer;
+  transition: var(--main-transtion);
+  font-size: 18px;
+  border-radius: 5px;
+}
+.playlist .container .playlist-details .row .saveplaylist button i {
+  color: var(--black);
+}
+.playlist .container .playlist-details .row .saveplaylist button span {
+  color: var(--light-color);
+  padding-left: 10px;
+}
+.playlist .container .playlist-details .row .saveplaylist button:hover {
+  background-color: var(--black);
+}
+.playlist .container .playlist-details .row .saveplaylist button:hover i,
+.playlist .container .playlist-details .row .saveplaylist button:hover span {
+  color: var(--white);
+}
+.playlist .container .playlist-details .row .imgs {
+  position: relative;
+}
+.playlist .container .playlist-details .row .imgs img {
+  height: 300px;
+  width: 100%;
+  border-radius: 5px;
+}
+.playlist .container .playlist-details .row .imgs .dis {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding: 7px 15px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+.playlist .container .playlist-details .row .tutor {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 10px 0;
+}
+.playlist .container .playlist-details .row .tutor img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.playlist .container .playlist-details .row .tutor .tutor-txt {
+  padding: 15px 0;
+}
+.playlist .container .playlist-details .row .tutor .tutor-txt h3 {
+  color: var(--black);
+  font-size: 22px;
+}
+.playlist .container .playlist-details .row .tutor .tutor-txt span {
+  color: var(--light-color);
+  font-size: 18px;
+}
+.playlist .container .playlist-details .row .headx {
+  color: var(--black);
+  font-size: 22px;
+  padding: 10px 0;
+}
+.playlist .container .playlist-details .row p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--light-color);
+  padding-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .playlist .container .playlist-details {
+    flex-direction: column;
+  }
+  .playlist .container .playlist-details .row {
+    width: 96%;
+  }
+}
+/* End Playlist Details  */
+.playlist .container .playlist-videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 15px;
+  margin: 35px 0 15px;
+}
+.playlist .container .playlist-videos .links {
+  padding: 25px;
+  background-color: var(--white);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.playlist .container .playlist-videos .links .imgs {
+  position: relative;
+  height: 200px;
+}
+.playlist .container .playlist-videos .links .imgs img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+}
+.playlist .container .playlist-videos .links .imgs .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: var(--main-transtion);
+}
+.playlist .container .playlist-videos .links .imgs .overlay i {
+  color: #fff;
+  font-size: 50px;
+}
+.playlist .container .playlist-videos .links:hover .overlay {
+  opacity: 1;
+}
+.playlist .container .playlist-videos .links h3 {
+  color: var(--black);
+  font-size: 18px;
+  padding-top: 15px;
+  transition: var(--main-transtion);
+}
+.playlist .container .playlist-videos .links:hover h3 {
+  color: var(--main-color);
+}
+/* ========================End PalyList Section   ======== */

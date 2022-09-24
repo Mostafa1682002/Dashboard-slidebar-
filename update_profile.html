@@ -12,7 +12,7 @@
     <!-- File CSS  -->
     <link rel="stylesheet" href="CSS/main.css" />
     <link rel="stylesheet" href="CSS/style.css" />
-    <title>Register Page</title>
+    <title>Update Profile</title>
   </head>
   <body class="">
     <!-- Start Header  -->
@@ -86,62 +86,67 @@
       </ul>
     </div>
     <!-- End Slidebar  -->
-    <!-- Start Register Section  -->
-    <section class="register-prof">
+    <!-- Start Update Profile Section  -->
+    <section class="update-profile">
       <div class="container">
-        <div class="content-rgisterProf">
-          <form class="login-register-form">
-            <h2>Register Now</h2>
-            <div class="box-frl">
-              <label for="name">your name</label>
+        <div class="content-updateProfile">
+          <form class="update-form">
+            <h2>Update Profile</h2>
+            <div class="box-f">
+              <label for="name">update name</label>
               <input
                 type="text"
-                name="Yname"
-                id="Yname"
-                placeholder="Enter your name"
-                required
+                name="name"
+                id="name"
+                placeholder="Mostafa Hossam"
               />
             </div>
-            <div class="box-frl">
-              <label for="Yemail">your email</label>
+            <div class="box-f">
+              <label for="email">update email</label>
               <input
                 type="email"
-                name="Yemail"
-                id="Yemail"
-                placeholder="Enter your email"
-                required
+                name="email"
+                id="email"
+                placeholder="mosthossam123@gmail.com"
               />
             </div>
-            <div class="box-frl">
-              <label for="YnewPass">your password</label>
+            <div class="box-f">
+              <label for="prevPass">previous password</label>
               <input
                 type="password"
-                name="YnewPass"
-                id="YnewPass"
-                placeholder="Enter your  password"
-                required
+                name="prevPass"
+                id="prevPass"
+                placeholder="Enter your old password"
               />
             </div>
-            <div class="box-frl">
-              <label for="YconfPass">confirm password</label>
+            <div class="box-f">
+              <label for="newPass">new password</label>
               <input
                 type="password"
-                name="YconfPass"
-                id="YconfPass"
-                placeholder="Confirm your  password"
-                required
+                name="newPass"
+                id="newPass"
+                placeholder="Enter your new password"
               />
             </div>
-            <div class="box-frl">
-              <label for="Select">select profile</label>
-              <input type="file" name="Select" id="Select" required />
+            <div class="box-f">
+              <label for="confPass">confirm password</label>
+              <input
+                type="password"
+                name="confPass"
+                id="confPass"
+                placeholder="Confirm your new password"
+              />
             </div>
-            <button class="btn">Register now</button>
+            <div class="box-f">
+              <label for="photo">update picture</label>
+              <input type="file" name="photo" id="photo" />
+            </div>
+            <button class="btn">update profile</button>
           </form>
         </div>
       </div>
     </section>
-    <!-- End Register Section  -->
+    <!-- End Update Profile Section  -->
     <!-- Start Footer  -->
     <footer>
       <div class="container">

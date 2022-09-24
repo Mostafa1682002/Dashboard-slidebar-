@@ -36,7 +36,6 @@ btnClose.onclick=()=>{
     document.body.classList.remove('active');
 }
 
-
 window.onscroll = () =>{
     if(window.innerWidth < 1000){
         slidebar.classList.remove('active');
@@ -44,5 +43,18 @@ window.onscroll = () =>{
     }
 }
 
-
 let year=document.querySelector('.year').innerHTML=new Date().getFullYear();
+
+//all playList Links
+let allLinksPlaylist=document.querySelectorAll('.links');
+allLinksPlaylist.forEach(function(element) {
+    element.addEventListener('click',goToWatchPage(element))
+}); 
+function goToWatchPage(e){
+    e.onclick=function(){
+        window.location.href='watch.html';
+    }
+}
+
+
+
