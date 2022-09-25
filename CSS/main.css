@@ -155,6 +155,7 @@ section {
   font-size: 25px;
   padding-bottom: 10px;
   border-bottom: var(--border);
+  text-transform: capitalize;
 }
 .flex {
   display: flex;

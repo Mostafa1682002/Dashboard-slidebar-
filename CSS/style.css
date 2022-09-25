@@ -823,7 +823,7 @@ footer .container .copy span {
   display: flex;
   align-items: center;
   gap: 25px;
-  padding: 10px 0;
+  padding-top: 10px;
 }
 .playlist .container .playlist-details .row .tutor img {
   width: 80px;
@@ -855,9 +855,13 @@ footer .container .copy span {
 @media (max-width: 768px) {
   .playlist .container .playlist-details {
     flex-direction: column;
+    gap: 15px;
   }
   .playlist .container .playlist-details .row {
     width: 96%;
+  }
+  .playlist .container .playlist-details .row .imgs img {
+    height: 250px;
   }
 }
 /* End Playlist Details  */
@@ -938,8 +942,10 @@ footer .container .copy span {
 }
 .content-profileDetails .profileDetails-boxs {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 15px;
+  align-items: center;
+  justify-content: center;
 }
 .content-profileDetails .profileDetails-boxs .box-details {
   font-size: 18px;
@@ -958,11 +964,14 @@ footer .container .copy span {
 /* ========================End Profile Details Section  ======== */
 
 /* ========================Start Watch Section ======== */
+.watch {
+  padding-bottom: 0;
+}
 .watch .container .content-watch {
   background-color: var(--white);
   padding: 15px;
   border-radius: 8px;
-  margin-top: 20px;
+  margin: 10px 0 20px;
 }
 .watch .container .content-watch .video video {
   width: 100%;
@@ -1025,6 +1034,11 @@ footer .container .copy span {
   cursor: pointer;
   transition: var(--main-transtion);
 }
+@media (max-width: 768px) {
+  .watch .container .content-watch .watch-form button {
+    font-size: 16px;
+  }
+}
 .watch .container .content-watch .watch-form button i {
   padding-right: 5px;
 }
@@ -1036,5 +1050,90 @@ footer .container .copy span {
   margin: 15px 0;
   color: var(--light-color);
   font-size: 17px;
+}
+/*Start Comments*/
+
+.watch .container .content-comments {
+  background-color: var(--white);
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+.watch .container .content-comments .Comments-form {
+  padding: 10px;
+  width: 100%;
+}
+.watch .container .content-comments .Comments-form h3 {
+  font-size: 20px;
+  color: var(--black);
+}
+.watch .container .content-comments .Comments-form textarea {
+  padding: 10px;
+  margin: 10px 0;
+  display: block;
+  border-radius: 5px;
+  color: var(--black);
+  background-color: var(--light-bg);
+  font-size: 18px;
+  resize: none;
+  height: 200px;
+  border: var(--border);
+  width: 100%;
+}
+/*Start User Comments */
+.watch .container .user-comments {
+  margin: 20px 0 0;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+  border-radius: 8px;
+}
+.watch .container .user-comments .box-u {
+  width: 100%;
+}
+.watch .container .user-comments .box-u .user {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 10px 0;
+}
+.watch .container .user-comments .box-u .user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.watch .container .user-comments .box-u .user .user-txt h3 {
+  font-size: 18px;
+  color: var(--black);
+}
+.watch .container .user-comments .box-u .user .user-txt span {
+  font-size: 15px;
+  color: var(--light-color);
+}
+.watch .container .user-comments .box-u .com {
+  font-size: 16px;
+  background-color: var(--light-bg);
+  padding: 13px 20px;
+  border-radius: 5px;
+  color: var(--black);
+  position: relative;
+  margin-top: 10px;
+}
+.watch .container .user-comments .box-u .com::after {
+  content: "";
+  position: absolute;
+  top: -26px;
+  left: 10px;
+  border: 14px solid;
+  border-color: transparent transparent var(--light-bg);
+}
+@media (max-width: 500px) {
+  .box-u .flex-btn {
+    flex-direction: column;
+    gap: 0;
+  }
 }
 /* ========================End Watch Section ======== */
