@@ -245,7 +245,7 @@ footer .container .copy span {
     padding: 10px 0;
   }
   footer .container .copy {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 /* End Footer  */
@@ -910,3 +910,131 @@ footer .container .copy span {
   color: var(--main-color);
 }
 /* ========================End PalyList Section   ======== */
+
+/* ========================Start Profile Details Section  ======== */
+.profile-details .container .content-profileDetails {
+  background-color: var(--white);
+  padding: 25px 15px;
+  margin-top: 25px;
+  border-radius: 8px;
+}
+.profile-details .container .content-profileDetails .dis-profileDetails {
+  margin: 15px 0;
+  text-align: center;
+}
+.profile-details .container .content-profileDetails .dis-profileDetails img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+}
+.profile-details .container .content-profileDetails .dis-profileDetails h3 {
+  font-size: 25px;
+  color: var(--black);
+  padding: 5px 0;
+}
+.profile-details .container .content-profileDetails .dis-profileDetails p {
+  color: var(--light-color);
+  font-size: 18px;
+}
+.content-profileDetails .profileDetails-boxs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+.content-profileDetails .profileDetails-boxs .box-details {
+  font-size: 18px;
+  background-color: var(--light-bg);
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+  font-weight: 600;
+}
+.content-profileDetails .profileDetails-boxs .box-details p {
+  color: var(--light-color);
+}
+.content-profileDetails .profileDetails-boxs .box-details p span {
+  color: var(--main-color);
+}
+/* ========================End Profile Details Section  ======== */
+
+/* ========================Start Watch Section ======== */
+.watch .container .content-watch {
+  background-color: var(--white);
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+.watch .container .content-watch .video video {
+  width: 100%;
+  object-fit: contain;
+  background-color: #000;
+  border-radius: 5px;
+}
+.watch .container .content-watch .title {
+  padding: 10px 0;
+  font-size: 20px;
+  color: var(--black);
+}
+.watch .container .content-watch .info {
+  display: flex;
+  gap: 25px;
+  padding: 10px 0 15px;
+  border-bottom: var(--border);
+}
+.watch .container .content-watch .info p i {
+  color: var(--main-color);
+  margin-right: 5px;
+}
+.watch .container .content-watch .info p span {
+  color: var(--light-color);
+}
+.watch .container .content-watch .tutor {
+  display: flex;
+  margin-top: 15px;
+  gap: 25px;
+  align-items: center;
+}
+.watch .container .content-watch .tutor img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.watch .container .content-watch .tutor .ctxt {
+  padding: 10px 0;
+}
+.watch .container .content-watch .tutor .ctxt p {
+  font-size: 20px;
+  color: var(--black);
+}
+.watch .container .content-watch .tutor .ctxt span {
+  color: var(--light-color);
+  font-size: 16px;
+}
+.watch .container .content-watch .watch-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.watch .container .content-watch .watch-form button {
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 18px;
+  margin-top: 10px;
+  background-color: var(--light-bg);
+  color: var(--light-color);
+  cursor: pointer;
+  transition: var(--main-transtion);
+}
+.watch .container .content-watch .watch-form button i {
+  padding-right: 5px;
+}
+.watch .container .content-watch .watch-form button:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+.watch .container .content-watch .discription {
+  margin: 15px 0;
+  color: var(--light-color);
+  font-size: 17px;
+}
+/* ========================End Watch Section ======== */
