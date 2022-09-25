@@ -58,6 +58,7 @@ header .container .icons span {
   height: 35px;
   border-radius: 10px;
   background-color: var(--light-bg);
+  color: var(--black);
   display: flex;
   align-items: center;
   justify-content: center;
