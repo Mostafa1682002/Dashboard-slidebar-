@@ -1,4 +1,5 @@
 /* Start Header   */
+
 header {
   background-color: var(--white);
   border-bottom: var(--border);
@@ -8,6 +9,7 @@ header {
   left: 0;
   z-index: 1000;
 }
+
 header .container {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -17,18 +19,22 @@ header .container {
   justify-content: space-between;
   position: relative;
 }
+
 header .container .logo {
   font-size: 30px;
 }
+
 header .container .logo a {
   color: var(--black);
 }
+
 header .container form {
   display: flex;
   height: 35px;
   width: 400px;
   background-color: var(--light-bg);
 }
+
 header .container form input {
   width: 100%;
   height: 100%;
@@ -37,6 +43,7 @@ header .container form input {
   color: var(--black);
   background: none;
 }
+
 header .container form button {
   height: 100%;
   padding: 5px 15px;
@@ -46,13 +53,16 @@ header .container form button {
   color: var(--black);
   transition: var(--main-transtion);
 }
+
 header .container form button:hover {
   color: var(--main-color);
 }
+
 header .container .icons {
   display: flex;
   gap: 8px;
 }
+
 header .container .icons span {
   width: 35px;
   height: 35px;
@@ -66,13 +76,16 @@ header .container .icons span {
   cursor: pointer;
   transition: var(--main-transtion);
 }
+
 header .container .icons span.fa-search {
   display: none;
 }
+
 header .container .icons span:hover {
   background-color: var(--black);
   color: var(--light-bg);
 }
+
 header .container .portfolioo {
   position: absolute;
   top: 110%;
@@ -86,23 +99,28 @@ header .container .portfolioo {
   transform: scale(0);
   transition: var(--main-transtion);
 }
+
 header .container .portfolioo.active {
   transform: scale(1);
 }
+
 header .container .portfolioo img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
 }
+
 header .container .portfolioo h3 {
   font-size: 20px;
   color: var(--black);
   padding: 10px 0 5px;
 }
+
 header .container .portfolioo p {
   font-size: 18px;
   color: var(--light-color);
 }
+
 @media (max-width: 768px) {
   header .container .logo {
     font-size: 25px;
@@ -125,8 +143,11 @@ header .container .portfolioo p {
     transform: scale(1);
   }
 }
+
 /* End Header   */
+
 /* Start Slidebar   */
+
 .slidebar {
   position: fixed;
   top: 0;
@@ -139,9 +160,11 @@ header .container .portfolioo p {
   transition: 0.4s;
   padding: 60px 0px;
 }
+
 .slidebar.active {
   left: -30rem;
 }
+
 .slidebar .close {
   position: absolute;
   right: 5px;
@@ -158,24 +181,29 @@ header .container .portfolioo p {
   pointer-events: none;
   transition: var(--main-transtion);
 }
+
 .slidebar .portfolio {
   text-align: center;
   padding: 0px 20px;
 }
+
 .slidebar .portfolio img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
 }
+
 .slidebar .portfolio h3 {
   font-size: 20px;
   color: var(--black);
   padding: 10px 0 5px;
 }
+
 .slidebar .portfolio p {
   font-size: 18px;
   color: var(--light-color);
 }
+
 .slidebar .nav {
   padding: 20px 0;
 }
@@ -186,25 +214,31 @@ header .container .portfolioo p {
   font-size: 18px;
   transition: var(--main-transtion);
 }
+
 .slidebar .nav li:not(:last-child) a {
   border-bottom: 1px solid var(--main-color);
 }
+
 .slidebar .nav li.active a,
 .slidebar .nav li a:hover {
   background-color: var(--light-bg);
 }
+
 .slidebar .nav li i {
   color: var(--main-color);
   margin-right: 10px;
   width: 25px;
 }
+
 .slidebar .nav li span {
   color: var(--light-color);
   transition: var(--main-transtion);
 }
+
 .slidebar .nav li:hover span {
   padding-left: 10px;
 }
+
 @media (max-width: 1000px) {
   .slidebar {
     left: -30rem;
@@ -223,8 +257,11 @@ header .container .portfolioo p {
     font-size: 16px;
   }
 }
+
 /* End Slidebar   */
+
 /* Start Footer  */
+
 footer {
   background-color: var(--white);
   color: var(--black);
@@ -232,11 +269,13 @@ footer {
   border-top: var(--border);
   margin-top: 20px;
 }
+
 footer .container .copy {
   text-align: center;
   text-transform: capitalize;
   font-size: 18px;
 }
+
 footer .container .copy span {
   color: var(--main-color);
   font-weight: 600;
@@ -312,34 +351,41 @@ footer .container .copy span {
   padding: 15px;
   border-radius: 5px;
 }
+
 .our-courses .container .content-courses .box-course .head-box {
   display: flex;
   align-items: center;
   gap: 15px;
   margin-bottom: 15px;
 }
+
 .our-courses .container .content-courses .box-course .head-box img {
   width: 70px;
   height: 70px;
   border-radius: 50%;
 }
+
 .our-courses .container .content-courses .box-course .head-box .text h4 {
   text-transform: capitalize;
   font-size: 18px;
   color: var(--black);
 }
+
 .our-courses .container .content-courses .box-course .head-box span {
   color: var(--light-color);
   font-size: 14px;
 }
+
 .our-courses .container .content-courses .box-course .imgs {
   position: relative;
 }
+
 .our-courses .container .content-courses .box-course .imgs img {
   width: 100%;
   max-height: 200px;
   border-radius: 8px;
 }
+
 .our-courses .container .content-courses .box-course .imgs .dis {
   position: absolute;
   top: 10px;
@@ -381,6 +427,7 @@ footer .container .copy span {
   font-size: 18px;
   padding-bottom: 10px;
 }
+
 @media (max-width: 768px) {
   .about .container .content-about {
     flex-direction: column;
@@ -389,6 +436,7 @@ footer .container .copy span {
     width: 96%;
   }
 }
+
 .about .container .count-about {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -396,6 +444,7 @@ footer .container .copy span {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 15px;
 }
+
 .about .container .count-about .box-count {
   background-color: var(--white);
   border-radius: 8px;
@@ -404,60 +453,75 @@ footer .container .copy span {
   align-items: center;
   gap: 15px;
 }
+
 .about .container .count-about .box-count span {
   font-size: 35px;
   width: 50px;
   text-align: center;
   color: var(--main-color);
 }
+
 .about .container .count-about .box-count .discrb h3 {
   padding-top: 5px;
   color: var(--black);
   font-size: 25px;
 }
+
 .about .container .count-about .box-count .discrb p {
   color: var(--light-color);
   font-size: 18px;
 }
+
 /* <!-- Start Student's Reviews  --> */
+
 .student-reviews .container .content-studentReview {
   margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   gap: 15px;
 }
+
 .student-reviews .container .content-studentReview .card {
   background-color: var(--white);
   border-radius: 8px;
   padding: 15px;
 }
+
 .student-reviews .container .content-studentReview .card p {
   color: var(--light-color);
   line-height: 1.7;
   font-size: 17px;
 }
+
 .student-reviews .container .content-studentReview .card .student {
   display: flex;
   align-items: center;
   padding: 10px 0;
   gap: 15px;
 }
+
 .student-reviews .container .content-studentReview .card .student img {
   width: 60px;
+  height: 60px;
+  border-radius: 50%;
 }
 
 .student-reviews .container .content-studentReview .card .student .text-stu h3 {
   color: var(--black);
   font-size: 20px;
 }
+
 .student-reviews .card .student .text-stu .starts {
   font-size: 16px;
   color: var(--orange);
 }
+
 /* <!-- End Student's Reviews  --> */
+
 /* ========================End About section ======== */
 
 /* ========================Start Teachers section ======== */
+
 .teachers .container .search-teacher {
   width: 100%;
   margin: 15px 0;
@@ -465,64 +529,77 @@ footer .container .copy span {
   background-color: var(--white);
   border-radius: 8px;
 }
+
 .teachers .container .search-teacher input {
   width: 100%;
   padding: 15px;
   font-size: 18px;
   background: none;
 }
+
 .teachers .container .search-teacher button {
   font-size: 18px;
   padding: 15px;
   background: none;
   cursor: pointer;
 }
+
 .teachers .container .content-teachers {
   padding: 10px 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   gap: 15px;
 }
+
 .teachers .container .content-teachers .box-teacher {
   padding: 15px;
   background-color: var(--white);
   border-radius: 8px;
 }
+
 .teachers .container .content-teachers .box-teacher h2 {
   color: var(--black);
   padding: 15px 0;
   font-size: 25px;
 }
+
 .teachers .container .content-teachers .box-teacher:first-child {
   text-align: center;
 }
+
 .teachers .container .content-teachers .box-teacher .teach {
   display: flex;
   gap: 15px;
   align-items: center;
   padding: 15px 0;
 }
+
 .teachers .container .content-teachers .box-teacher .teach img {
   width: 60px;
   height: 60px;
   border-radius: 50%;
 }
+
 .teachers .container .content-teachers .box-teacher .teach .teach-txt h3 {
   font-size: 20px;
   color: var(--black);
 }
+
 .teachers .container .content-teachers .box-teacher .teach .teach-txt span {
   font-size: 16px;
   color: var(--light-color);
 }
+
 .teachers .container .content-teachers .box-teacher p {
   font-size: 17px;
   color: var(--light-color);
   padding-bottom: 7px;
 }
+
 .teachers .container .content-teachers .box-teacher p span {
   color: var(--main-color) !important;
 }
+
 /* ========================End Teachers section ======== */
 
 /* ========================Start Contact Us section ======== */
@@ -533,19 +610,23 @@ footer .container .copy span {
   align-items: center;
   padding-top: 20px;
 }
+
 .contact-us .container .content-contactUs img {
   width: 50%;
 }
+
 .contact-us .container .content-contactUs .contactUs-form {
   background-color: var(--white);
   padding: 20px;
 }
+
 .contact-us .container .content-contactUs .contactUs-form h3 {
   font-size: 30px;
   color: var(--black);
   text-align: center;
   margin-bottom: 15px;
 }
+
 .contact-us .container .content-contactUs .contactUs-form input,
 .contact-us .container .content-contactUs .contactUs-form textarea {
   margin-bottom: 20px;
@@ -555,14 +636,17 @@ footer .container .copy span {
   border-radius: 8px;
   background-color: var(--light-bg);
 }
+
 .contact-us .container .content-contactUs .contactUs-form textarea {
   height: 200px;
   resize: none;
 }
+
 .contact-us .container .content-contactUs .contactUs-form button {
   display: block;
   margin: auto;
 }
+
 @media (max-width: 768px) {
   .contact-us .container .content-contactUs {
     flex-direction: column;
@@ -574,28 +658,33 @@ footer .container .copy span {
     font-size: 30px;
   }
 }
+
 .contact-us .container .contact-me {
   padding-top: 40px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   gap: 15px;
 }
+
 .contact-us .container .contact-me .box-me {
   padding: 15px;
   background-color: var(--white);
   border-radius: 8px;
   text-align: center;
 }
+
 .contact-us .container .contact-me .box-me span {
   font-size: 40px;
   color: var(--main-color);
   margin-bottom: 10px;
 }
+
 .contact-us .container .contact-me .box-me h3 {
   color: var(--black);
   font-size: 25px;
   margin-bottom: 10px;
 }
+
 .contact-us .container .contact-me .box-me a {
   color: var(--light-color);
   display: block;
@@ -603,54 +692,65 @@ footer .container .copy span {
   font-size: 18px;
   transition: var(--main-transtion);
 }
+
 .contact-us .container .contact-me .box-me a:hover {
   color: var(--black);
   text-decoration: underline;
 }
+
 /* ========================End Contact Us section ======== */
 
 /* ========================Start Profile Section ======== */
+
 .profile .container .content-profile {
   margin-top: 30px;
   background-color: var(--white);
   padding: 20px;
   border-radius: 8px;
 }
+
 .profile .container .content-profile .update {
   text-align: center;
   padding: 15px;
 }
+
 .profile .container .content-profile .update img {
   width: 110px;
   height: 110px;
   border-radius: 50%;
 }
+
 .profile .container .content-profile .update h3 {
   color: var(--black);
   font-size: 23px;
   padding: 7px;
 }
+
 .profile .container .content-profile .update p {
   font-size: 17px;
   color: var(--light-color);
 }
+
 .profile .container .content-profile .boxs-profile {
   margin-top: 25px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   gap: 15px;
 }
+
 .profile .container .content-profile .boxs-profile .boxx {
   background-color: var(--light-bg);
   border-radius: 8px;
   padding: 15px;
 }
+
 .profile .container .content-profile .boxs-profile .boxx .txtx {
   display: flex;
   align-items: center;
   gap: 15px;
   padding: 5px 0 10px;
 }
+
 .profile .container .content-profile .boxs-profile .boxx .txtx > span {
   width: 45px;
   height: 45px;
@@ -660,40 +760,49 @@ footer .container .copy span {
   background-color: var(--black);
   border-radius: 8px;
 }
+
 .profile .container .content-profile .boxs-profile .boxx .txtx > span i {
   color: var(--white);
   font-size: 18px;
 }
+
 .profile .container .content-profile .boxs-profile .boxx .txtx > div span {
   font-size: 25px;
   color: var(--main-color);
 }
+
 .profile .container .content-profile .boxs-profile .boxx .txtx > div p {
   color: var(--light-color);
 }
+
 /* ========================End Profile Section ======== */
 
 /* ========================Start Update Profile Section  ======== */
+
 .update-profile .container .content-updateProfile {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .update-profile .container .content-updateProfile .update-form {
   background-color: var(--white);
   width: 500px;
   padding: 20px;
   border-radius: 8px;
 }
+
 .update-profile .container .content-updateProfile .update-form h2 {
   font-size: 25px;
   color: var(--black);
   padding-bottom: 15px;
   text-align: center;
 }
+
 .content-updateProfile .update-form .box-f {
   margin: 10px 0 15px;
 }
+
 .content-updateProfile .update-form .box-f label {
   display: block;
   color: var(--light-color);
@@ -701,6 +810,7 @@ footer .container .copy span {
   font-size: 18px;
   padding-bottom: 7px;
 }
+
 .content-updateProfile .update-form .box-f input {
   padding: 15px;
   background-color: var(--light-bg);
@@ -709,33 +819,40 @@ footer .container .copy span {
   width: 100%;
   font-size: 18px;
 }
+
 /* ========================End Update Profile Section  ======== */
 
 /* ========================Start Register and Login Section   ======== */
+
 .content-loginProf {
   min-height: 74vh;
 }
+
 .content-rgisterProf,
 .content-loginProf {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .login-register-form {
   background-color: var(--white);
   width: 500px;
   padding: 20px;
   border-radius: 8px;
 }
+
 .login-register-form h2 {
   font-size: 25px;
   color: var(--black);
   padding-bottom: 15px;
   text-align: center;
 }
+
 .login-register-form .box-frl {
   margin: 10px 0 15px;
 }
+
 .login-register-form .box-frl label {
   display: block;
   color: var(--light-color);
@@ -745,6 +862,7 @@ footer .container .copy span {
   width: fit-content;
   position: relative;
 }
+
 .login-register-form .box-frl label::after {
   content: "*";
   position: absolute;
@@ -752,6 +870,7 @@ footer .container .copy span {
   right: -10px;
   top: 0;
 }
+
 .login-register-form .box-frl input {
   padding: 15px;
   background-color: var(--light-bg);
@@ -760,9 +879,11 @@ footer .container .copy span {
   width: 100%;
   font-size: 18px;
 }
+
 /* ========================End Register and Login Section   ======== */
 
 /* ========================Start PalyList Section   ======== */
+
 /* Start Playlist Details  */
 
 .playlist .container .playlist-details {
@@ -774,12 +895,15 @@ footer .container .copy span {
   align-items: center;
   gap: 30px;
 }
+
 .playlist .container .playlist-details .row {
   width: 50%;
 }
+
 .playlist .container .playlist-details .row .saveplaylist {
   margin-bottom: 15px;
 }
+
 .playlist .container .playlist-details .row .saveplaylist button {
   padding: 10px;
   background-color: var(--light-bg);
@@ -788,28 +912,35 @@ footer .container .copy span {
   font-size: 18px;
   border-radius: 5px;
 }
+
 .playlist .container .playlist-details .row .saveplaylist button i {
   color: var(--black);
 }
+
 .playlist .container .playlist-details .row .saveplaylist button span {
   color: var(--light-color);
   padding-left: 10px;
 }
+
 .playlist .container .playlist-details .row .saveplaylist button:hover {
   background-color: var(--black);
 }
+
 .playlist .container .playlist-details .row .saveplaylist button:hover i,
 .playlist .container .playlist-details .row .saveplaylist button:hover span {
   color: var(--white);
 }
+
 .playlist .container .playlist-details .row .imgs {
   position: relative;
 }
+
 .playlist .container .playlist-details .row .imgs img {
   height: 300px;
   width: 100%;
   border-radius: 5px;
 }
+
 .playlist .container .playlist-details .row .imgs .dis {
   position: absolute;
   top: 10px;
@@ -820,39 +951,47 @@ footer .container .copy span {
   font-size: 18px;
   border-radius: 10px;
 }
+
 .playlist .container .playlist-details .row .tutor {
   display: flex;
   align-items: center;
   gap: 25px;
   padding-top: 10px;
 }
+
 .playlist .container .playlist-details .row .tutor img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
 }
+
 .playlist .container .playlist-details .row .tutor .tutor-txt {
   padding: 15px 0;
 }
+
 .playlist .container .playlist-details .row .tutor .tutor-txt h3 {
   color: var(--black);
   font-size: 22px;
 }
+
 .playlist .container .playlist-details .row .tutor .tutor-txt span {
   color: var(--light-color);
   font-size: 18px;
 }
+
 .playlist .container .playlist-details .row .headx {
   color: var(--black);
   font-size: 22px;
   padding: 10px 0;
 }
+
 .playlist .container .playlist-details .row p {
   font-size: 18px;
   line-height: 1.8;
   color: var(--light-color);
   padding-bottom: 10px;
 }
+
 @media (max-width: 768px) {
   .playlist .container .playlist-details {
     flex-direction: column;
@@ -865,28 +1004,34 @@ footer .container .copy span {
     height: 250px;
   }
 }
+
 /* End Playlist Details  */
+
 .playlist .container .playlist-videos {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   gap: 15px;
   margin: 35px 0 15px;
 }
+
 .playlist .container .playlist-videos .links {
   padding: 25px;
   background-color: var(--white);
   border-radius: 8px;
   cursor: pointer;
 }
+
 .playlist .container .playlist-videos .links .imgs {
   position: relative;
   height: 200px;
 }
+
 .playlist .container .playlist-videos .links .imgs img {
   width: 100%;
   height: 200px;
   border-radius: 5px;
 }
+
 .playlist .container .playlist-videos .links .imgs .overlay {
   position: absolute;
   inset: 0;
@@ -898,49 +1043,60 @@ footer .container .copy span {
   opacity: 0;
   transition: var(--main-transtion);
 }
+
 .playlist .container .playlist-videos .links .imgs .overlay i {
   color: #fff;
   font-size: 50px;
 }
+
 .playlist .container .playlist-videos .links:hover .overlay {
   opacity: 1;
 }
+
 .playlist .container .playlist-videos .links h3 {
   color: var(--black);
   font-size: 18px;
   padding-top: 15px;
   transition: var(--main-transtion);
 }
+
 .playlist .container .playlist-videos .links:hover h3 {
   color: var(--main-color);
 }
+
 /* ========================End PalyList Section   ======== */
 
 /* ========================Start Profile Details Section  ======== */
+
 .profile-details .container .content-profileDetails {
   background-color: var(--white);
   padding: 25px 15px;
   margin-top: 25px;
   border-radius: 8px;
 }
+
 .profile-details .container .content-profileDetails .dis-profileDetails {
   margin: 15px 0;
   text-align: center;
 }
+
 .profile-details .container .content-profileDetails .dis-profileDetails img {
   width: 110px;
   height: 110px;
   border-radius: 50%;
 }
+
 .profile-details .container .content-profileDetails .dis-profileDetails h3 {
   font-size: 25px;
   color: var(--black);
   padding: 5px 0;
 }
+
 .profile-details .container .content-profileDetails .dis-profileDetails p {
   color: var(--light-color);
   font-size: 18px;
 }
+
 .content-profileDetails .profileDetails-boxs {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -948,6 +1104,7 @@ footer .container .copy span {
   align-items: center;
   justify-content: center;
 }
+
 .content-profileDetails .profileDetails-boxs .box-details {
   font-size: 18px;
   background-color: var(--light-bg);
@@ -956,75 +1113,92 @@ footer .container .copy span {
   text-align: center;
   font-weight: 600;
 }
+
 .content-profileDetails .profileDetails-boxs .box-details p {
   color: var(--light-color);
 }
+
 .content-profileDetails .profileDetails-boxs .box-details p span {
   color: var(--main-color);
 }
+
 /* ========================End Profile Details Section  ======== */
 
 /* ========================Start Watch Section ======== */
+
 .watch {
   padding-bottom: 0;
 }
+
 .watch .container .content-watch {
   background-color: var(--white);
   padding: 15px;
   border-radius: 8px;
   margin: 10px 0 20px;
 }
+
 .watch .container .content-watch .video video {
   width: 100%;
   object-fit: contain;
   background-color: #000;
   border-radius: 5px;
 }
+
 .watch .container .content-watch .title {
   padding: 10px 0;
   font-size: 20px;
   color: var(--black);
 }
+
 .watch .container .content-watch .info {
   display: flex;
   gap: 25px;
   padding: 10px 0 15px;
   border-bottom: var(--border);
 }
+
 .watch .container .content-watch .info p i {
   color: var(--main-color);
   margin-right: 5px;
 }
+
 .watch .container .content-watch .info p span {
   color: var(--light-color);
 }
+
 .watch .container .content-watch .tutor {
   display: flex;
   margin-top: 15px;
   gap: 25px;
   align-items: center;
 }
+
 .watch .container .content-watch .tutor img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
 }
+
 .watch .container .content-watch .tutor .ctxt {
   padding: 10px 0;
 }
+
 .watch .container .content-watch .tutor .ctxt p {
   font-size: 20px;
   color: var(--black);
 }
+
 .watch .container .content-watch .tutor .ctxt span {
   color: var(--light-color);
   font-size: 16px;
 }
+
 .watch .container .content-watch .watch-form {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .watch .container .content-watch .watch-form button {
   border-radius: 5px;
   padding: 10px 15px;
@@ -1035,23 +1209,28 @@ footer .container .copy span {
   cursor: pointer;
   transition: var(--main-transtion);
 }
+
 @media (max-width: 768px) {
   .watch .container .content-watch .watch-form button {
     font-size: 16px;
   }
 }
+
 .watch .container .content-watch .watch-form button i {
   padding-right: 5px;
 }
+
 .watch .container .content-watch .watch-form button:hover {
   background-color: var(--black);
   color: var(--white);
 }
+
 .watch .container .content-watch .discription {
   margin: 15px 0;
   color: var(--light-color);
   font-size: 17px;
 }
+
 /*Start Comments*/
 
 .watch .container .content-comments {
@@ -1060,14 +1239,17 @@ footer .container .copy span {
   margin: 20px 0;
   border-radius: 8px;
 }
+
 .watch .container .content-comments .Comments-form {
   padding: 10px;
   width: 100%;
 }
+
 .watch .container .content-comments .Comments-form h3 {
   font-size: 20px;
   color: var(--black);
 }
+
 .watch .container .content-comments .Comments-form textarea {
   padding: 10px;
   margin: 10px 0;
@@ -1081,7 +1263,9 @@ footer .container .copy span {
   border: var(--border);
   width: 100%;
 }
+
 /*Start User Comments */
+
 .watch .container .user-comments {
   margin: 20px 0 0;
   background-color: var(--white);
@@ -1091,15 +1275,18 @@ footer .container .copy span {
   padding: 15px;
   border-radius: 8px;
 }
+
 .watch .container .user-comments .box-u {
   width: 100%;
 }
+
 .watch .container .user-comments .box-u .user {
   display: flex;
   gap: 20px;
   align-items: center;
   padding: 10px 0;
 }
+
 .watch .container .user-comments .box-u .user img {
   width: 50px;
   height: 50px;
@@ -1110,10 +1297,12 @@ footer .container .copy span {
   font-size: 18px;
   color: var(--black);
 }
+
 .watch .container .user-comments .box-u .user .user-txt span {
   font-size: 15px;
   color: var(--light-color);
 }
+
 .watch .container .user-comments .box-u .com {
   font-size: 16px;
   background-color: var(--light-bg);
@@ -1123,6 +1312,7 @@ footer .container .copy span {
   position: relative;
   margin-top: 10px;
 }
+
 .watch .container .user-comments .box-u .com::after {
   content: "";
   position: absolute;
@@ -1131,10 +1321,12 @@ footer .container .copy span {
   border: 14px solid;
   border-color: transparent transparent var(--light-bg);
 }
+
 @media (max-width: 500px) {
   .box-u .flex-btn {
     flex-direction: column;
     gap: 0;
   }
 }
+
 /* ========================End Watch Section ======== */
